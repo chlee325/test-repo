@@ -6,6 +6,9 @@ on:  # yamllint disable-line rule:truthy
       - main
     tags:
       - rel/*
+  pull_request:
+    branches:
+      - main
   schedule:
     - cron: '5 12 * * 6'  # UTC
   workflow_dispatch:
