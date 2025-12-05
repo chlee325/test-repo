@@ -16,9 +16,6 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-        with:
-          path: src
-          fetch-depth: 0
       - name: Set up Dokcer buildx
         uses: docker/setup-buildx-action@v3
 
